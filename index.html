@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--font setting-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <title>MOMENTUM</title>
+  </head>
+
+  <body>
+    <div class="js-clock"></div>
+    <div class="js-name">
+      <span>What is your name?</span>
+      <form class="form">
+        <input type="text" />
+      </form>
+    </div>
+    <div class="js-todo">
+      <h3>what next to do?</h3>
+      <form>
+        <input type="text" />
+      </form>
+      <ul class="todos"></ul>
+    </div>
+    <div class="js-weather"></div>
+
+    <!--script-->
+    <script src="./clock.js"></script>
+    <script type="module" src="./name.js"></script>
+    <script type="module" src="./todo.js"></script>
+  </body>
+</html>
