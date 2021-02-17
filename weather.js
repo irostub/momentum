@@ -13,7 +13,7 @@ function getWeather(lat, lon) {
   };
 
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=843eb06e7aca8263a37e1fbeee6eb3b1&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=843eb06e7aca8263a37e1fbeee6eb3b1&units=metric`
   )
     .then((response) => {
       return response.json();
