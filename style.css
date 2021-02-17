@@ -1,8 +1,195 @@
 * {
   font-family: "Open Sans", sans-serif;
+  text-shadow: 0 0 4px #111;
+  color: white;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
+.background {
+  overflow: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  margin: 0px;
+}
+.weather {
+  display: flex;
+  margin-left: auto;
+  margin-right: 1%;
+}
+.weather > h4 {
+  font-size: 1.5vw;
+  margin-left: 10px;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 15vh;
+  text-align: center;
+}
+.clock {
+  font-size: 10vw;
+}
+.name input {
+  background-color: transparent;
+  font-size: 3vw;
+  width: 50vw;
+  height: 4vw;
+  border-color: white;
+  border-width: 0 0 3px 0;
+  text-align: center;
+}
+.name > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4vw;
+}
 
+.todo {
+  position: fixed;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100%;
+  bottom: -90%;
+}
+
+.todo > button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  filter: opacity(0.5);
+}
+.todo > button > img {
+  width: 8vw;
+  height: 1.5vw;
+  margin-bottom: 0.5vw;
+}
+.todo > button:hover {
+  filter: opacity(1);
+}
+.todo > div > h3 {
+  margin-top: 0;
+  margin-bottom: 1vw;
+  padding-top: 5vw;
+  font-size: 5vw;
+}
+
+.todo > .todo-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90vh;
+  border-radius: 1vw 1vw 0 0;
+}
+
+.todo input {
+  background-color: transparent;
+  font-size: 3vw;
+  width: 50vw;
+  height: 4vw;
+  border-color: white;
+  border-width: 0 0 3px 0;
+}
+
+.todo ul {
+  width: 50vw;
+  font-size: 1vw;
+  margin-top: 3vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+.todo li {
+  text-align: left;
+  margin-left: 7px;
+  margin-right: 0px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.todo li span {
+  display: inline;
+}
+.todo li button {
+  margin: 0;
+  float: right;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+li button img {
+  filter: invert(17%) sepia(91%) saturate(6707%) hue-rotate(358deg) brightness(101%) contrast(112%);
+}
+ul {
+  margin: 0;
+}
 .hide {
   display: none;
+}
+
+.background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  z-index: -9999;
+}
+
+.background > img {
+  animation: fadein 1.2s ease-in-out normal;
+}
+
+.slideup {
+  animation: slideup 1s ease-in normal forwards;
+}
+
+.slidedown {
+  animation: slidedown 1s ease-in normal forwards;
+}
+
+.fadein {
+  animation: fadein 1s ease-in normal forwards;
+}
+.fadeout {
+  animation: fadeout 1s ease-in normal forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes slideup {
+  from {
+    bottom: -90%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: -90%;
+  }
 }
