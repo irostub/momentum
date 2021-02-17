@@ -51,6 +51,9 @@ body {
   border-width: 0 0 3px 0;
   text-align: center;
 }
+.name input:focus {
+  outline: none;
+}
 .name > p {
   margin-top: 0;
   margin-bottom: 0;
@@ -90,6 +93,9 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   height: 90vh;
   border-radius: 1vw 1vw 0 0;
+}
+.todo input:focus {
+  outline: none;
 }
 
 .todo input {
