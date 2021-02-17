@@ -20,27 +20,36 @@
 
     <title>MOMENTUM</title>
   </head>
-
   <body>
-    <div class="js-clock"></div>
-    <div class="js-name">
-      <span>What is your name?</span>
-      <form class="form">
-        <input type="text" />
-      </form>
+    <div class="js-background background">
+      <img alt="background.img" />
     </div>
-    <div class="js-todo">
-      <h3>what next to do?</h3>
-      <form>
-        <input type="text" />
-      </form>
-      <ul class="todos"></ul>
-    </div>
-    <div class="js-weather"></div>
+    <div class="js-weather weather"></div>
+    <div class="container">
+      <div class="js-clock clock"></div>
+      <div class="js-name name">
+        <p>What is your name?</p>
+        <form class="form">
+          <input type="text" />
+        </form>
+      </div>
 
+      <div class="js-todo todo">
+        <button><img draggable="false" src="./slideButton.png" alt="" /></button>
+        <div class="todo-container">
+          <h3>What next to do?</h3>
+          <form>
+            <input type="text" />
+          </form>
+          <ul class="todos"></ul>
+        </div>
+      </div>
+    </div>
     <!--script-->
     <script src="./clock.js"></script>
-    <script type="module" src="./name.js"></script>
-    <script type="module" src="./todo.js"></script>
+    <script src="./name.js"></script>
+    <script src="./todo.js"></script>
+    <script src="./background.js"></script>
+    <script src="./weather.js"></script>
   </body>
 </html>
