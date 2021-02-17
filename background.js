@@ -1,8 +1,7 @@
 const BACKGROUND_CONTAINER = document.querySelector(".js-background");
-const img = BACKGROUND_CONTAINER.querySelector("img");
 const imageUrl = "https://source.unsplash.com/1920x1080/?";
 function init() {
-  img.src = generateSeasonalQuery();
+  BACKGROUND_CONTAINER.style = `background:url("${generateSeasonalQuery()}") no-repeat center/cover`;
 }
 
 function getMonth() {
