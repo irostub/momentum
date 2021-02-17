@@ -1,9 +1,7 @@
-import module from "./module.js";
-
 const NAME_CONTAINER = document.querySelector(".js-name");
 
 function displayHello() {
-  const text = NAME_CONTAINER.querySelector("span");
+  const text = NAME_CONTAINER.querySelector("p");
   const name = localStorage.getItem("name");
   text.innerText = `Hello ${name}!`;
 }
